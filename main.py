@@ -40,7 +40,6 @@ try:
     # Usando o modelo "small" para melhor precisão, como discutimos
     model = whisper.load_model("small")
 
-    # Transcreve o áudio a partir do CAMINHO DO ARQUIVO
     result = model.transcribe(new_file, fp16=False, language="pt")
 
     transcribed_text = result["text"]
