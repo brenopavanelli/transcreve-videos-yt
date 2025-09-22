@@ -37,7 +37,6 @@ try:
     # --- Parte 2: Transcrição com Whisper a partir do arquivo ---
     print("Iniciando a transcrição com o Whisper...")
 
-    # Usando o modelo "small" para melhor precisão, como discutimos
     model = whisper.load_model("small")
 
     result = model.transcribe(new_file, fp16=False, language="pt")
